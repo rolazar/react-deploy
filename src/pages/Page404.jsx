@@ -1,10 +1,11 @@
 import { useRippleTWE } from "../hooks/useRippleTWE";
 import pictureSrc from "../assets/404-page.png";
 import { useRedirect } from "../hooks/useRedirect";
+import { repoRoot } from "../../public/repoRoot";
 
 export function Page404() {
   useRippleTWE();
-  const handleRedirect = useRedirect("/", 10000);
+  const handleRedirect = useRedirect(repoRoot, 10000);
 
   return (
     <main>

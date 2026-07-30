@@ -1,6 +1,6 @@
 import { useCollapseTWE } from "../hooks/useCollapseTWE";
 import { NavLink } from "react-router";
-
+import { repoRoot } from "../../public/repoRoot";
 export function Navbar() {
   useCollapseTWE();
 
@@ -12,7 +12,7 @@ export function Navbar() {
     >
       <div className="flex w-full flex-wrap items-center justify-between px-3">
         <div className="ms-2">
-          <NavLink className="text-xl text-black dark:text-white" to="/">
+          <NavLink className="text-xl text-black dark:text-white" to={repoRoot}>
             Navbar
           </NavLink>
         </div>
@@ -61,7 +61,7 @@ export function Navbar() {
               <NavLink
                 className="text-black dark:text-white lg:px-2"
                 aria-current="page"
-                to="/"
+                to={repoRoot}
                 data-twe-nav-link-ref
               >
                 Home
@@ -74,7 +74,7 @@ export function Navbar() {
             >
               <NavLink
                 className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                to="/apikey"
+                to={repoRoot + "apikey"}
                 data-twe-nav-link-ref
               >
                 API Key
