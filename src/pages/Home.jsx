@@ -2,8 +2,8 @@ export function Home() {
   return (
     <main>
       <p>
-        TODO: explains how create a 404 page that automatically redirects to a
-        URL.
+        TODO: In README.md, add numbered instructions explaining in your own
+        words how to deploy a React website to GitHub.
       </p>
     </main>
   );
